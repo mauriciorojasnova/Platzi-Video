@@ -213,3 +213,39 @@ html {
 .footer a:hover {
     text-decoration: underline;
 }
+
+.error-container {
+    width: 100%;
+    height: calc(100vh - 180px);
+    background: linear-gradient(#21C08B, #AB88FF);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.error-container__number {
+    color: white;
+    font-size: 10rem;
+}
+
+.error-container__text {
+    color: white;
+    font-size: 2rem;
+}
+
+.animated {
+    animation-duration: 2.5s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+    40% {transform: translateY(-30px);}
+    60% {transform: translateY(-15px);}
+  }
+  .bounce {
+    animation-name: bounce;
+  }
+  
