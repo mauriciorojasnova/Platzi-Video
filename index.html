@@ -16,13 +16,14 @@
   <body>
     <header class="header">
       <img
+        tabindex="0"
         class="header__img"
         src="imgs/logo_platzi_video.png"
         alt="Logo de Platzi video"
       />
       <div class="header__menu">
         <div class="header__menu--profile">
-          <img src="icons/icon_user.png" alt="User icon" />
+          <img tabindex="0" src="icons/icon_user.png" alt="User icon" />
           <p>Perfil</p>
         </div>
         <ul>
@@ -33,9 +34,14 @@
     </header>
     <section class="main">
       <h2 class="main__title">¿Qué quieres ver hoy?</h2>
-      <input class="input" type="text" placeholder="Buscar..." />
+      <input
+        aria-label="Buscar"
+        class="input"
+        type="text"
+        placeholder="Buscar..."
+      />
     </section>
-    <h2 class="categories__title">Mi lista</h2>
+    <h2 tabindex="0" class="categories__title">Mi lista</h2>
     <section class="carousel">
       <div class="carousel__container">
         <div class="carousel-item">
@@ -157,7 +163,7 @@
         </div>
       </div>
     </section>
-    <h2 class="categories__title">Tendencias</h2>
+    <h2 tabindex="0" class="categories__title">Tendencias</h2>
     <section class="carousel">
       <div class="carousel__container">
         <div class="carousel-item">
@@ -279,7 +285,7 @@
         </div>
       </div>
     </section>
-    <h2 class="categories__title">Originales de Platzi video</h2>
+    <h2 tabindex="0" class="categories__title">Originales de Platzi video</h2>
     <section class="carousel">
       <div class="carousel__container">
         <div class="carousel-item">
